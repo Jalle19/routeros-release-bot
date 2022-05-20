@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><language>en-us</language><title>MikroTik Download</title><link>https://mikrotik.com/</link><atom:link href="//mikrotik.com/download.rss" rel="self" type="application/rss+xml" /><copyright>Copyright 2022, Mikrotikls Ltd</copyright><generator>MikroTik Rss</generator><ttl>60</ttl><description>Feed for newest RouterOS updates.</description><item><title>RouterOS 7.3beta40 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.3beta40 changelog:</h3>!) queue - do not allow using CAKE type in simple and tree setups (already configured queues will be disabled);<br />
+*) bgp - added "name" parameter for connections;<br />
+*) bgp - fixed "keepalive-timeout" value when upgrading from RouterOS v6;<br />
+*) bgp - fixed "l2vpn" distribution;<br />
+*) bridge - added more details for loop detection warning;<br />
+*) bridge - do not set VLAN on inactive port with a "set" command;<br />
+*) bridge - ignore VLAN tagged BPDU;<br />
+*) capsman - improved traffic processing over CAP communication tunnels:<br />
+*) chr - fixed Cloud DDNS update after license renewal;<br />
+*) dot1x - fixed RADIUS State attribute when client is reauthenticated;<br />
+*) dot1x - fixed port based VLAN ID assignment on devices without a switch chip;<br />
+*) dot1x - improved server system stability during authentication;<br />
+*) ipsec - fixed printing of active peer statistics;<br />
+*) l3hw - improved offloading in cases of HW table overflow for CRS305, CRS326-24G-2S+, CRS328, CRS318, CRS310;<br />
+*) l3hw - optimized offloading when dealing with large volume of directly connected hosts;<br />
+*) lte - added SMS sending support for MBIM protocol;<br />
+*) lte - allow only MCC/NMC format in "operator" parameter;<br />
+*) lte - clear SIM values when modem in "stopped" state;<br />
+*) mpls - improved LDP AF selection process and behavior;<br />
+*) ntp - do not allow setting port number in "server" parameter;<br />
+*) ovpn - adjusted SHA2 authentication algorithm naming to allow legacy OpenVPN implementations to connect;<br />
+*) ovpn - improved server stability under continous overload;<br />
+*) ovpn - reply with the same IP address that the connection was established to;<br />
+*) ppp - added support for VRF;<br />
+*) romon - fixed VLAN tagged packet processing;<br />
+*) route - fixed IPv6 /127 route nexthop resolution;<br />
+*) routerboot - prevent enabling "protected-routerboot" on unsupported factory firmware versions; <br />
+*) sfp - fixed link flap for QSFP+ and QSFP28 ports connected with a breakout cable, in cases where the base interface changes "running" state (introduced in v7.3beta33);<br />
+*) sfp - hide empty monitor values in console;<br />
+*) snmp - added VRF support (CLI only);<br />
+*) snmp - fixed reported disk size when multiple external disks are attached;<br />
+*) snmp - report "ifSpeed" as 0 if value out of bounds (use "ifHighSpeed" for high speed interfaces instead);<br />
+*) ssh - added AES-GCM cipher support;<br />
+*) ssh - removed DSA public key authentication support;<br />
+*) supout - added simplified IPv4 and IPv6 routing table prints;<br />
+*) switch - fixed "switch-cpu" port stats for 98DXxxxx and 98PX1012 switches (introduced in v7.3beta37);<br />
+*) switch - fixed missing stats in traffic-monitor for 98DXxxxx and 98PX1012 switches;<br />
+*) system - fixed Kernel timer consistency;<br />
+*) tunnels - improved packet handling over EoIP, IPIP and GRE tunnels;<br />
+*) vpls - fixed TE transport path usage after startup;<br />
+*) vrrp - fixed learning of bridged local MAC addreses;<br />
+*) winbox - added missing "IBGP", "EBGP", "Limit Exceeded" and "Stopped" parameters under "Routing/BGP/Sessions" menu;<br />
+*) winbox - added missing "Keep Sent Attributes" parameter under "Routing/BGP/Connection" menu;<br />
+*) winbox - added missing "Scan List" parameter for W60G interfaces;<br />
+*) winbox - added missing BGP session commands;<br />
+*) winbox - added support for 2.5Gbps and 100Gbps Ethernet speed options;<br />
+*) winbox - do not show "Session Uptime" parameter under "LTE" menu if not supported by modem;<br />
+*) winbox - fixed "Disconnect Timeout" parameter type under "CAPsMAN" menu;<br />
+*) winbox - fixed "IP/Cloud" window refreshing after changes are detected;<br />
+*) winbox - properly load band values under "LTE" menu;<br />
+*) winbox - removed obsolete "Routing Table" parameter under "IP/Firewall" menu;<br><br>Download the new '<b>RouterOS 7.3beta40</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Fri, 13 May 2022 11:13:54 +0300</pubDate><guid isPermaLink="false">2df34c71625c0b2777048da6c27e8273</guid></item><item><title>RouterOS 7.2.3 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.2.3 changelog:</h3>*) system - fixed RouterOS bootup when wifiwave2 package is installed (introduced in v7.2.2);<br><br>Download the new '<b>RouterOS 7.2.3</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Tue, 03 May 2022 14:06:31 +0300</pubDate><guid isPermaLink="false">9d90688ee460c9d2a2caba5ad25ea5ef</guid></item><item><title>RouterOS 7.2.2 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.2.2 changelog:</h3>*) bgp - added initial support for prefix limit;<br />
+*) bgp - improved stability when editing BGP template;<br />
+*) bonding - fixed LACP flapping for RB5009 and CCR2004-16G-2S+ devices;<br />
+*) ccr - added visible "passthrough" flag for interfaces on CCR2004-1G-2XS-PCIe;<br />
+*) ccr - usability and stability improvements for passthrough interfaces on CCR2004-1G-2XS-PCIe;<br />
+*) cd-install - allow selecting on which drive to install RouterOS;<br />
+*) conntrack - limited full Connection Tracking warning to 1 message per minute;<br />
+*) crs3xx - fixed storm rate on 1Gbps interfaces for CRS354 devices;<br />
+*) defconf - suggest user to set up new password;<br />
+*) dhcpv4-server - fixed minor logging typo;<br />
+*) fetch - improved full disk detection;<br />
+*) filesystem - fixed possible boot failure on RB850Gx2 and RB1100AHx2;<br />
+*) filesystem - improved long-term filesystem stability and data integrity;<br />
+*) gps - fixed minor value unit typo;<br />
+*) ipv6 - removed bogus commands from IPv6 neighbors menu;<br />
+*) l3hw - improved offloading for directly connected hosts on CRS305, CRS326-24G-2S+, CRS328, CRS318, CRS310;<br />
+*) l3hw - improved route table offloading for CRS317, CRS309, CRS312, CRS326-24S+2Q+, CRS354, CRS5xx, CCR2x16 devices;<br />
+*) leds - fixed ethernet LED behavior on wAP R ac;<br />
+*) leds - fixed wireless related LED behavior with WW2 package;<br />
+*) lte - added SMS sending support for MBIM protocol;<br />
+*) lte - added support for generic PXA1802 based modems;<br />
+*) lte - disabled wait for LTE auto attach;<br />
+*) lte - hide slave interfaces from export;<br />
+*) lte - improved stability when upgrading LTE firmware on Chateau 5G;<br />
+*) mlag - fixed MAC address moving between bridge ports;<br />
+*) mpls - do MPLS forwarding for nexthops without mappings;<br />
+*) mpls - fixed MPLS MTU and path MTU selection;<br />
+*) mpls - fixed MPLS forwarding after any interface configuration parameter is changed;<br />
+*) ospf - fixed GRE interface compatibility with OSPF;<br />
+*) ospf - improved stability when enabling or removing interface-template entries;<br />
+*) ovpn - fixed memory leak on TILE architecture;<br />
+*) ovpn - fixed packet processing on MT7621A;<br />
+*) ovpn - improved Windows client disconnect procedure in UDP mode;<br />
+*) ovpn - improved service stability when processing frequent disconnects in UDP mode;<br />
+*) ovpn - improved stability when forwarding traffic on TILE;<br />
+*) ping - fixed socket allocation after VRF change;<br />
+*) ppp - fixed "remote-ipv6-prefix" parameter unsetting;<br />
+*) ppp - fixed active sessions sometimes getting stuck;<br />
+*) ppp - fixed issue with multiple active sessions when "only-one" is enabled;<br />
+*) queues - improved stability in large list of queue scenarios;<br />
+*) rb5009 - fixed 10G linking issues with Intel X520, XXV710 NICs;<br />
+*) route - fixed "table" menu emptying after RouterOS upgrade;<br />
+*) route - fixed static routes in VRF becoming invalid after reboot;<br />
+*) route-filter - fixed community matchers;<br />
+*) rsvp-te - improved stability when "Resv" received for non-existing session;<br />
+*) supout - added RIP section;<br />
+*) system - fixed IP service initialization in VRF after system startup;<br />
+*) system - fixed rare partial loss of RouterOS configuration after package upgrade/downgrade/install/uninstall;<br />
+*) torch - properly capture all related IPv6 traffic;<br />
+*) upnp - improved stability when processing incomplete HTTP header;<br />
+*) vpls - fixed "pw-l2mtu" parameter usage;<br />
+*) vrf - fixed VRF leaking;<br />
+*) winbox - do not show "unknown" area under "Routing/OSPF/LSA" menu;<br />
+*) winbox - do not show type value for NXDOMAIN entries under "IP/DNS/Cache" menu;<br />
+*) winbox - made "Interface Templates" table sortable under "Routing/OSPF" menu;<br />
+*) winbox - properly clean up SFP module information after it is unplugged;<br />
+*) winbox - properly clean up disk after a failed file upload;<br />
+*) winbox - show PVID column by default under "Bridge" menu;<br />
+*) wireless - fixed EAP-TLS authentication;<br />
+*) wireless - fixed GUD version in 3gpp information;<br />
+*) ww2 - fixed VLAN tag handling;<br />
+*) x86 - improved support for i40e driver;<br />
+*) x86 - improved support for Intel E810 NIC;<br><br>Download the new '<b>RouterOS 7.2.2</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Mon, 02 May 2022 15:05:45 +0300</pubDate><guid isPermaLink="false">ee11609086cc34d01271ce95b391528e</guid></item><item><title>RouterOS 7.3beta37 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.3beta37 changelog:</h3>*) bonding - fixed LACP flapping for RB5009 and CCR2004-16G-2S+ devices;<br />
+*) bridge - fixed packet marking for IP/IPv6 firewall;<br />
+*) dot1x - improved server stability when using re-authentication;<br />
+*) fetch - improved full disk detection;<br />
+*) gps - fixed minor value unit typo;<br />
+*) l3hw - improved offloading for directly connected hosts on CRS305, CRS326-24G-2S+, CRS328, CRS318, CRS310;<br />
+*) led - fixed QSFP+, QSFP28 activity LEDs when using 40Gbps modules (introduced in v7.3beta33);<br />
+*) lte - disabled wait for LTE auto attach; <br />
+*) mpls - fixed MPLS MTU and path MTU selection;<br />
+*) ovpn - fixed hardware offloading support on CHR;<br />
+*) ovpn - improved Windows client disconnect procedure in UDP mode;<br />
+*) ovpn - moved authentication failure messages to "info" logging level;<br />
+*) ppp - added warning when using prefix length other than /64 for router advertisement;<br />
+*) ppp - fixed "remote-ipv6-prefix" parameter unsetting;<br />
+*) ppp - fixed issue with multiple active sessions when "only-one" is enabled;<br />
+*) routerboot - properly reset system configuration when protected bootloader is enabled and reset button used;<br />
+*) rsvp-te - improved stability when "Resv" received for non-existing session;<br />
+*) sfp - improved QSFP/SFP interface initialization for 98DXxxxx switches;<br />
+*) switch - fixed missing stats from traffic-monitor for 98DXxxxx and 98PX1012 switches;<br />
+*) system - fixed RouterOS bootup when wifiwave2 package is installed (introduced in v7.3beta34);<br />
+*) system - fixed rare partial loss of RouterOS configuration after package upgrade/downgrade/install/uninstall;<br />
+*) user-manager - improved stability when received EAP attribute with non-existing state attribute;<br />
+*) vpls - fixed "pw-l2mtu" parameter usage;<br><br>Download the new '<b>RouterOS 7.3beta37</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Tue, 26 Apr 2022 10:12:16 +0300</pubDate><guid isPermaLink="false">0249753a0a42038599775d129fbeb168</guid></item><item><title>RouterOS 7.3beta34 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.3beta34 changelog:</h3>*) bgp - improved stability when editing BGP template;<br />
+*) ccr - added "passthrough" flag for interfaces on CCR2004-1G-2XS-PCIe;<br />
+*) dhcpv4-server - added "age" parameter for dynamic leases;<br />
+*) dhcpv4-server - fixed minor logging typo;<br />
+*) export - fixed value ID exporting that does not refer to any name;<br />
+*) fetch - fixed SFTP upload;<br />
+*) filesystem - fixed possible boot failure on RB850Gx2 and RB1100AHx2;<br />
+*) filesystem - improved long-term filesystem stability and data integrity;<br />
+*) ipsec - fixed IPsec IRQ initialization on startup on TILE;<br />
+*) leds - fixed ethernet LED behavior on wAP R ac;<br />
+*) lte - disabled extended signal info query for Telit LN940 module;<br />
+*) ospf - fixed GRE interface compatibility with OSPF;<br />
+*) ospf - improved stability when enabling or removing interface-template entries;<br />
+*) ovpn - improved stability when forwarding traffic on TILE;<br />
+*) ping - fixed socket allocation after VRF change;<br />
+*) ppp - fixed active sessions sometimes getting stuck;<br />
+*) queues - improved stability in large list of queue scenarios;<br />
+*) rb5009 - fixed 10G linking issues with Intel X520, XXV710 NICs;<br />
+*) ssh - fail non-interactive client after first invalid password;<br />
+*) supout - added IGMP-Proxy section;<br />
+*) winbox - added "Comment" parameter for BGP templates and connections;<br />
+*) winbox - made "Interface Templates" table sortable under "Routing/OSPF" menu;<br />
+*) winbox - made "MPLS Interface" table sortable under "MPLS" menu;<br />
+*) winbox - made 56 the default ping size;<br />
+*) winbox - moved "src-address-list" and "dst-address-list" parameters to "General" tab under "IPv6/Firewall" menu;<br />
+*) winbox - show correct file system type under "System/Disks" menu;<br><br>Download the new '<b>RouterOS 7.3beta34</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Wed, 20 Apr 2022 16:09:09 +0300</pubDate><guid isPermaLink="false">11b50a751a7d8466b03d3054ab5970a4</guid></item><item><title>RouterOS 6.49.6 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>6.49.6 changelog:</h3>*) led - fixed wireless signal strength led on Cube Lite60;<br />
+*) routerboot - fixed packet receiving in etherboot on Wireless Wire nRAY;<br />
+*) winbox - added missing "3GGP RAW" parameter under "Interface/Wireless/Interworking Profile" menu;<br />
+*) wireless - fixed GUD version in 3gpp information;<br><br>Download the new '<b>RouterOS 6.49.6</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Tue, 19 Apr 2022 12:08:12 +0300</pubDate><guid isPermaLink="false">bfcd53cc22cef340d963e64bec81f361</guid></item><item><title>RouterOS 7.2.1 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.2.1 changelog:</h3>*) filesystem - improved long-term filesystem stability and data integrity;<br><br>Download the new '<b>RouterOS 7.2.1</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Wed, 13 Apr 2022 13:54:20 +0300</pubDate><guid isPermaLink="false">6f1a8c26744f18d12fd03a69198cf05c</guid></item><item><title>RouterOS 7.3beta33 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.3beta33 changelog:</h3>*) bgp - added initial support for prefix limit;<br />
+*) bonding - added "lacp-user-key" setting;<br />
+*) ccr - added visible "passthrough" flag for interfaces on CCR2004-1G-2XS-PCIe;<br />
+*) ccr - usability and stability improvements for passthrough interfaces on CCR2004-1G-2XS-PCIe;<br />
+*) cd-install - allow selecting on which drive to install RouterOS;<br />
+*) conntrack - limited full Connection Tracking warning to 1 message per minute;<br />
+*) dhcpv4-server - added "age" parameter for dynamic leases;<br />
+*) dhcpv4-server - fixed conflicting or declined lease detection when IP pool differs from server's configuration;<br />
+*) filesystem - improved UBIFS stability and data integrity after downgrade to RouterOS v6 and upgrade to RouterOS v7;<br />
+*) gps - added GPS package support for Chateau devices;<br />
+*) ipv6 - added "ra-preference" parameter support for RA;<br />
+*) ipv6 - removed bogus commands from IPv6 neighbors menu;<br />
+*) l3hw - improved route table offloading for CRS317, CRS309, CRS312, CRS326-24S+2Q+, CRS354, CRS5xx, CCR2x16 devices;<br />
+*) leds - fixed wireless related LED behavior with WW2 package;<br />
+*) lora - do not allow setting non-existing forwarding server;<br />
+*) lora - fixed bogus TOO_EARLY errors;<br />
+*) lora - removed TX lookup table;<br />
+*) lte - added MCS, CQI and RI value reporting for Fibocom FG621;<br />
+*) lte - added SMS sending support for MBIM protocol;<br />
+*) lte - added support for generic PXA1802 based modems;<br />
+*) lte - disabled wait for LTE auto attach;<br />
+*) lte - expose diagnostics channel for all modems;<br />
+*) lte - fixed LTE firwmare upgrade on RBLtAP-2HnD with R11e-LTE6;<br />
+*) lte - fixed Sierra MC7455 modem initialization;<br />
+*) lte - hide slave interfaces from export;<br />
+*) lte - improved stability when configuring multiple APN's at the same time in MBIM mode;<br />
+*) lte - improved stability when upgrading LTE firmware on Chateau 5G;<br />
+*) mlag - fixed MAC address moving between bridge ports;<br />
+*) mpls - do MPLS forwarding for nexthops without mappings;<br />
+*) mpls - fixed MPLS forwarding after any interface configuration parameter is changed;<br />
+*) ntp - fixed "use-local-clock" behavior when enabling server;<br />
+*) ovpn - fixed memory leak on TILE architecture;<br />
+*) ovpn - fixed packet processing on MT7621A;<br />
+*) ovpn - improved service stability when outbound packets are blocked by firewall in UDP mode;<br />
+*) ovpn - improved service stability when processing frequent disconnects in UDP mode;<br />
+*) port - do not loose "parity" setting;<br />
+*) route - fixed "nexthop" table printing;<br />
+*) route - fixed "table" menu emptying after RouterOS upgrade;<br />
+*) route - fixed static routes in VRF becoming invalid after reboot;<br />
+*) route-filter - fixed community matchers;<br />
+*) routerboard - fixed USB bus numbering on LtAP and M33G;<br />
+*) routerboot - added extra shortcut information on how to boot into etherboot;<br />
+*) sfp - added 2.5Gbps rate for SFP+ and QSFP+ interfaces on 98DXxxxx and 98PX1012 switches (requires disabled auto-negotiation);<br />
+*) sfp - improved Q/SFP interface initialization and stability for 98DXxxxx and 98PX1012 switches;<br />
+*) snmp - hide Vendor ID in DHCP MIB when branding is present;<br />
+*) supout - added IGMP-Proxy section;<br />
+*) supout - added NTP servers section;<br />
+*) supout - added PIMSM section;<br />
+*) supout - added RIP section;<br />
+*) supout - added WireGuard section;<br />
+*) switch - added option to match source and destination IP addresses in ARP packets for RB5009 (requires mac-protocol=arp setting);<br />
+*) system - fixed IP service initialization in VRF after system startup;<br />
+*) torch - properly capture all related IPv6 traffic;<br />
+*) tr069-client - fixed RPC download of "1 Vendor Configuration File" with branding package;<br />
+*) upnp - improved stability when processing incomplete HTTP header;<br />
+*) user-manager - added "Acct-Interim-Interval" to predefined attribute list;<br />
+*) w60g - improved stability on Cube 60Pro ac and CubeSA 60Pro ac;<br />
+*) webfig - properly show all routing table content;<br />
+*) winbox - added "ra-preference" parameter under "IPv6/ND" menu;<br />
+*) winbox - added SKID and AKID parameters under "Certificate" menu;<br />
+*) winbox - added warning message for LTE upgrade process;<br />
+*) winbox - do not auto start Wireless Sniffer when opened;<br />
+*) winbox - do not show "unknown" area under "Routing/OSPF/LSA" menu;<br />
+*) winbox - do not show type value for NXDOMAIN entries under "IP/DNS/Cache" menu;<br />
+*) winbox - fixed graph drawing in QuickSet;<br />
+*) winbox - fixed hex type values under "User Manager" menu;<br />
+*) winbox - fixed typo in ZeroTier instance title;<br />
+*) winbox - minimal required version is v3.33;<br />
+*) winbox - moved "src-address-list" and "dst-address-list" parameters to "General" tab under "IP/Firewall" menu;<br />
+*) winbox - properly clean up SFP module information after it is unplugged;<br />
+*) winbox - properly clean up disk after a failed file upload;<br />
+*) winbox - show "System/RouterBOARD/Mode Button" on devices that have such feature;<br />
+*) winbox - show PVID column by default under "Bridge" menu;<br />
+*) winbox - take into account timezone for timed values under "User Manager" menu;<br />
+*) wireless - fixed "wmm-support=required" checking;<br />
+*) wireless - fixed EAP-TLS authentication;<br />
+*) wireless - fixed GUD version in 3gpp information;<br />
+*) ww2 - fixed VLAN tag handling;<br />
+*) x86 - improved support for Intel E810 NIC;<br />
+*) zerotier - added support for Controller configuration;<br><br>Download the new '<b>RouterOS 7.3beta33</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Wed, 13 Apr 2022 13:50:46 +0300</pubDate><guid isPermaLink="false">fb9035a8f8433d05accdec656fb78341</guid></item><item><title>RouterOS 7.2 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.2 changelog:</h3>*) api - accept "Content-Type" with specified charset;<br />
+*) arm - fixed "auto" CPU frequency setting;<br />
+*) arm - fixed "shutdown" command on hAP ac^2;<br />
+*) arm64 - improved Watchdog initiated reboot reason reporting;<br />
+*) arm64 - improved low disk space handling condition on upgrade;<br />
+*) backup - added "force-v6-to-v7-configuration-upgrade" option on backup load to clear RouterOS v7 configuration and trigger reimport of RouterOS v6 route configuration (CLI only);<br />
+*) backup - fixed automatic backup generation when resetting configuration;<br />
+*) backup - fixed cloud backup's creation timezone;<br />
+*) bgp - added BGP advertisements display (requires output.keep-sent-attributes to be set);<br />
+*) bgp - do not export default BGP values;<br />
+*) bgp - fixed VPNv4 route sending to remote peer;<br />
+*) bgp - fixed link-local iBGP address selection;<br />
+*) bgp - fixed network advertisement from address-lists after reboot;<br />
+*) bgp - fixed routing table and BGP configuration order in export;<br />
+*) bgp - improvements on detecting peers local address when IPv6 link-local addresses are used;<br />
+*) bluetooth - allow to export device, advertiser and scanner configuration;<br />
+*) bluetooth - disable scanning by default;<br />
+*) bridge - added fast-path and inter-VLAN routing FastTrack support when vlan-filtering is enabled;<br />
+*) bridge - fixed FastPath when using "frame-types=admit-only-untagged-and-priority-tagged" setting;<br />
+*) bridge - fixed PPPoE packet forwarding when using "use-ip-firewall-for-pppoe" setting;<br />
+*) bridge - fixed bridge filter and NAT rules on ARM64 and TILE devices;<br />
+*) bridge - fixed destination NAT when using "use-ip-firewall" setting;<br />
+*) bridge - fixed filter and NAT "set-priority" action;<br />
+*) bridge - fixed filter and NAT "set-priority" on ARM64 devices;<br />
+*) bridge - fixed filter rules when using interface lists;<br />
+*) bridge - fixed firewall "ingress-priority" matcher and "new-priority=from-ingress" action settings from VLAN tagged frames;<br />
+*) bridge - fixed priority tagged frame forwarding when using "frame-types=admit-only-untagged-and-priority-tagged" setting;<br />
+*) capsman - improved stability when running background scan on CAP;<br />
+*) capsman - improved system stability when processing CAP packet by Mangle;<br />
+*) ccr2004 - improved PCI timeout handling on CCR2004-1G-2XS-PCIe;<br />
+*) ccr2004 - improved system stability on CCR2004-12S+2XS;<br />
+*) certificate - allow to choose digest algorithm for CSR signing;<br />
+*) certificate - made "fingerprint" parameter read-only;<br />
+*) chr - improved system stability when writing into memory;<br />
+*) chr - temporarily suspended downgrade to RouterOS v6;<br />
+*) clock - properly notify all instances about time changes;<br />
+*) conntrack - properly detect helper status;<br />
+*) console - fixed "print" command with additional "where" condition;<br />
+*) console - improved console responsiveness when processing received characters;<br />
+*) console - made "password" parameter mandatory when creating a new user;<br />
+*) console - properly erase CLI history after configuration reset;<br />
+*) console - updated copyright notice;<br />
+*) crs1xx/2xx - fixed static switch host addresses after link down;<br />
+*) crs1xx/2xx - ignore static bridge host addresses (switch unicast-fdb should be used instead);<br />
+*) crs3xx - fixed CPU load balancing for ARM dual core devices;<br />
+*) crs3xx - fixed QSFP+ interface LEDs;<br />
+*) crs3xx - fixed watchdog timer functionality;<br />
+*) crs3xx - improved SFP+ interface linking after reboot for CRS312 device;<br />
+*) crs3xx - improved maximum allowed ACL rule calculation;<br />
+*) crs3xx - improved system stability when creating many ACL rules on CRS317, CRS309, CRS312, CRS326-24S+2Q+ and CRS354 devices;<br />
+*) defconf - made "192.168.188.1/24" the default LAN IP address for LTE CPE devices;<br />
+*) dhcp-server - fixed DHCP Option decimal value parsing;<br />
+*) dhcp-server - fixed statistics sending in "Accounting Stop" packets;<br />
+*) dhcp-server - send "Class" attribute in "Accounting Request" when provided by RADIUS;<br />
+*) dhcpv4-server - allow adding comments;<br />
+*) dhcpv4-server - remove dynamic leases when server configuration is removed;<br />
+*) dhcpv4-server - reset dynamic "bcast" flag when receiving offer from DHCP relay;<br />
+*) dhcpv4-server - reset offer counter when receiving offer from DHCP relay;<br />
+*) dhcpv6 - added VRF support;<br />
+*) dot1x - added "server-fail-vlan-id", "guest-vlan-id" and "reauth-timeout" settings for dot1x server;<br />
+*) dot1x - added "src-address", "src-mac-address" and "src-port" settings for dynamic switch rules;<br />
+*) dot1x - added NAS-Port-ID attribute for RADIUS Access-Request;<br />
+*) dude - fixed The Dude client compatibility with RouterOS v7;<br />
+*) dude - fixed The Dude compatibility with ARM64;<br />
+*) ethernet - improved system stability when receiving large packets on devices with 88F3720 CPU (nRAY, LHGG);<br />
+*) firewall - improved available port lookup for source NAT when free port range is exhausted;<br />
+*) graphing - properly generate interface graph for traffic higher than 2.1Gbps;<br />
+*) hotspot - fixed login page over HTTPS;<br />
+*) hotspot - fixed memory leak on every web page loading;<br />
+*) hotspot - fixed web page loading using HTTPS;<br />
+*) ike2 - ignore "INITIAL-CONTACT" payload on responder when "send-initial-contact" is disabled;<br />
+*) interface - fixed minor memory leak when interface or connected route is changed;<br />
+*) ipsec - added hardware acceleration support for CCR2116;<br />
+*) ipsec - fixed "identities" menu emptying after RouterOS upgrade/reboot;<br />
+*) ipv6 - do not add duplicate dynamic prefix when static already exists;<br />
+*) ipv6 - fixed "retransmissit-interval" unit value;<br />
+*) ipv6 - fixed VLAN tagged PPPoE packet receiving on RB5009;<br />
+*) l2tp - fixed CHAP challenge packet processing over IPsec;<br />
+*) l2tp - improved service stability when disabling L2TP server with connected clients;<br />
+*) l2tp - improved system stability when processing L2TP control messages;<br />
+*) l3hw - added HW offloaded FastTrack support for inter-VLAN routing;<br />
+*) l3hw - fixed HW offloaded NAT;<br />
+*) l3hw - fixed HW offloaded routing when using 7 or more VLAN interfaces;<br />
+*) l3hw - fixed ICMP message when routed packet exceeds MTU and DF flag is set;<br />
+*) l3hw - fixed bonding source MAC address;<br />
+*) l3hw - fixed default route offloading for CRS305, CRS326-24G-2S+, CRS328, netPower, netFiber devices;<br />
+*) l3hw - improved routing table offloading for CRS305, CRS326-24G-2S+, CRS328, netPower, netFiber devices;<br />
+*) l3hw - improved system stability when using 7 or more VLAN interfaces;<br />
+*) led - fixed LED behavior on Audience;<br />
+*) led - reduced LTE signal LED range to -70;<br />
+*) leds - fixed user LED on RB750Gr3;<br />
+*) log - added warning message when connection tracking table is full;<br />
+*) log - include message also in e-mail body;<br />
+*) lora - fixed "antenna-gain" parameter unit;<br />
+*) lte - add IPv6 address on interface as well;<br />
+*) lte - added 3 APN profile support and APN name re-using on R11e-LTE6;<br />
+*) lte - added MAC address and IPv6 LL address persistence after reboot on EG12 and EG18 modems;<br />
+*) lte - added basic information support for Telit LM960 and LM940 in MBIM mode;<br />
+*) lte - added class based support for configless RNDIS LTE modems;<br />
+*) lte - added support for Uplink CA reporting;<br />
+*) lte - changed "CS/PS" registration type from "both" to "any" on R11e-LTE un R11e-LTE6;<br />
+*) lte - do not loose "band" configuration after reboot on Chateau 5G;<br />
+*) lte - do not show external antenna selector on devices that does not support it;<br />
+*) lte - enabled multi-APN and name re-use support for Chateau;<br />
+*) lte - expose diagnostics channel for all modems;<br />
+*) lte - fixed "monitor" command to not report old info;<br />
+*) lte - fixed AT command response handling on R11e-LTE;<br />
+*) lte - fixed IPv6 address addition after startup on R11e-LTE6;<br />
+*) lte - fixed MBIM modem reset on AT timeout;<br />
+*) lte - fixed link flapping when loosing cellular signal on R11e-LTE un R11e-LTE6;<br />
+*) lte - fixed packet forwarding on R11e-4G and R11e-LTE-US;<br />
+*) lte - fixed possible timeouts when sending SMS in LTE only mode on R11e-LTE;<br />
+*) lte - fixed support for Sierra MC7710;<br />
+*) lte - fixed support for Telit 960;<br />
+*) lte - improved stability on "+EGMR" response in MBIM mode;<br />
+*) lte - improved stability when modem disappears during firmware upgrade;<br />
+*) lte - improved support for sending/receiving SMS in LTE only mode on R11e-LTE6;<br />
+*) lte - made "no" the default value for "use-network-apn" parameter;<br />
+*) lte - properly recognize MBIM modem in USB port as LTE on Chateau 5G;<br />
+*) ntp - allow adding duplicate server address if dynamic entry exists;<br />
+*) ntp - fixed multicast mode support;<br />
+*) ntp - improved IPv6 address support;<br />
+*) ntp - improved service stability when none of the NTP servers are reachable for a while;<br />
+*) ntp - improved source address usage for reply packets;<br />
+*) ntp - print log change time with time-zone applied;<br />
+*) ospf - added "ptmp-broadcast" interface type (compatible with RouterOSv6 PTMP type);<br />
+*) ospf - convert ospf "static" redistribute to "static,dhcp,modem,vpn" after update from RouterOS v6;<br />
+*) ospf - fixed MD5 authentication;<br />
+*) ospf - fixed NBMA hello's not being sent if priority is set to 0;<br />
+*) ospf - fixed default route origination when "default-originate=if-installed" "redistribute" is enabled;<br />
+*) ospf - fixed default type-3 LSA's not being injected to stub area;<br />
+*) ospf - fixed distance if "originate-default" is set to "always";<br />
+*) ospf - fixed external LSA not updating after prefix netmask change;<br />
+*) ospf - fixed incorrect LSA types when changing area types;<br />
+*) ospf - fixed neighbor election failure;<br />
+*) ospf - fixed neighbor stuck in ExStart;<br />
+*) ospf - fixed simple authentication;<br />
+*) ospf - general stability improvements;<br />
+*) ospf - improved DB retransmit logging;<br />
+*) ospf - improved logging;<br />
+*) ospf - improved overall stability;<br />
+*) ospf - improved stability for very large LSDB;<br />
+*) ospf - improved stability on OSPFv3 instance disabling;<br />
+*) ospf - improved stability when DR goes down;<br />
+*) ospf - improves stability when handling looped back OSPF packets;<br />
+*) ospf - properly set VRF for gateway;<br />
+*) ospf - send notifies for neighbors;<br />
+*) ovpn - added SHA2 authentication algorithm support;<br />
+*) ovpn - added hardware acceleration support for IPQ4018/IPQ4019 and AL* series chipsets;<br />
+*) ovpn - added option to send disconnect message in UDP mode;<br />
+*) ovpn - fixed large option message parsing;<br />
+*) ovpn - improved UDP session handling;<br />
+*) ovpn - improved memory allocation on Tile in "ethernet" mode;<br />
+*) ovpn - improved system stability in high load scenarios;<br />
+*) pimsm - fixed menu prints;<br />
+*) pimsm - general stability improvements;<br />
+*) poe - fixed PoE driver loading on CRS354-48P-4S+2Q+;<br />
+*) poe - update PoE firmware only on devices that support it;<br />
+*) ppp - added "comment" option for PPPoE servers;<br />
+*) ppp - fixed AT+CPIN chat when SIM PIN is specified;<br />
+*) ppp - improved stability when handling large amount of connections simultaneously;<br />
+*) ppp - show local and remote IPv6 addresses (CLI only);<br />
+*) pppoe - added option to configure "host-uniq" parameter;<br />
+*) pppoe - added option to ignore PADI messages with empty service name;<br />
+*) pppoe - use default MTU of 1492;<br />
+*) pptp - added insecure connection warning;<br />
+*) pptp - show insecure connection warning on dynamic interfaces;<br />
+*) qsfp - correctly display auto-negotiation status;<br />
+*) queue - fixed queued IPv6 traffic considered as "invalid" by Firewall;<br />
+*) queue - improved system stability when processing traffic;<br />
+*) queue - improved system stability when using more than 255 unique packet marks;<br />
+*) rb4011 - fixed jumbo frame processing on SFP+ port when using 1G module;<br />
+*) rip - added logging;<br />
+*) rip - fixed route metrics;<br />
+*) rip - fixed route redistribution;<br />
+*) rip - use nexthop with interface;<br />
+*) route - allow OSPF and RIP redistributed routes to be matched by routing filters;<br />
+*) route - fixed "min-prefix" configuration when set to 0;<br />
+*) route - fixed "suppress-hw-offload" update;<br />
+*) route - fixed "table" menu emptying after RouterOS upgrade;<br />
+*) route - fixed BGP atomic aggregate value;<br />
+*) route - fixed ECMP load balancing in FastPath;<br />
+*) route - fixed ECMP route removal;<br />
+*) route - fixed route addition to VRF from BGP;<br />
+*) route - fixed router's LSA for PTP networks;<br />
+*) route - fixed routing configuration export on SMIPS devices;<br />
+*) route - general stability improvements;<br />
+*) route - improved routing table print speed;<br />
+*) route - show OSPF and RIP specific attributes in "/routing route" table;<br />
+*) route-filter - fixed "return" action;<br />
+*) route-filter - fixed complex matchers with "|| or and &&";<br />
+*) route-filter - fixed incorrect invert-match configuration upgrade from RouterOS v6;<br />
+*) route-filter - fixed range conversion after update from RouterOS v6;<br />
+*) route-filters - allow to filter and modify default route if "originate-default" is set to "always";<br />
+*) route-filters - fixed possible address list race condition and memory leak;<br />
+*) route-filters - renamed "*-set" to "*-list";<br />
+*) routerboard - fixed "ether2" interface presence on some RBwAPGR devices;<br />
+*) routerboard - fixed WPS button functionality on Audience;<br />
+*) routing - added PCAP viewer tool for BGP advertisements debugging purposes;<br />
+*) routing-filter - fixed "bgp-*-communities-empty" matcher;<br />
+*) rpki - made RPKI verify non-strict, introduces new state "unverified";<br />
+*) rpki - show expire timer;<br />
+*) sfp - improved SFP module detection on CRS106 and CRS112;<br />
+*) smb - fixed SMB2.0 disk size reporting;<br />
+*) smips - improved RAM allocation;<br />
+*) sms - increased "at-chat" timeout when sending SMS;<br />
+*) snmp - added SFP vendor name to optical table;<br />
+*) snmp - added support for "ipv6AddrPrefixTable" and "ipv6RouteNumber" OID's;<br />
+*) snmp - allow two level nesting for vlan, bonding speed query;<br />
+*) socks - fixed SOCKS5 support;<br />
+*) ssh - fixed forwarding with IPv6 link-local addresses;<br />
+*) ssl - fixed CA certificate processing when "subjAltName" is marked as critical;<br />
+*) supout - added "port-controller" bridge section;<br />
+*) switch - added "rx-overflow" counter for 88E6393X (RB5009) and 88E6191X (CCR2004-16G-2S+) switch chips;<br />
+*) switch - fixed port-isolation misconfiguration detection when using multiple switches;<br />
+*) switch - improved packet forwarding with enabled "cpu-flow-control" setting between different rate interfaces for 88E6393X (RB5009) and 88E6191X (CCR2004-16G-2S+) switch chips;<br />
+*) switch - improved switch chip initialization process on bootup for CCR2004-16g-2s+ devices;<br />
+*) switch - properly limit maximum number of switch rules to 256 on RB5009;<br />
+*) system - fixed license loss on some RB1100Dx4 and RB4011 devices;<br />
+*) tr069-client - accept 200-299 codes for HTTP diagnostics;<br />
+*) tr069-client - added support for 5G band configuration;<br />
+*) tr069-client - added support for wireless "skip-DFS" configuration;<br />
+*) tr069-client - added support for wireless client uptime reporting;<br />
+*) tr069-client - fixed RPC download of "3 Vendor Configuration File" with branding package;<br />
+*) traffic-flow - do not handle NAT events when "nat-events" is disabled;<br />
+*) traffic-generator - fixed transmit speed for multiple asymmetric streams;<br />
+*) upgrade - improved 404 error handling when checking for new versions;<br />
+*) upgrade - improved downgrade prompt message;<br />
+*) ups - fixed UPS support;<br />
+*) usb - fixed display of incorrect port count for USB serial ports;<br />
+*) user - removed obsolete "tikapp" policy;<br />
+*) user - send "Class" attribute in "Accounting Request" when provided by RADIUS;<br />
+*) vlan - fixed improper VLAN priority addition for routed packets;<br />
+*) vxlan - allow unsetting "group" and "interface" properties;<br />
+*) vxlan - fixed running state after reboot when using "interface" and "group" settings;<br />
+*) webfig - do not show side menu if WebFig is disabled by skin;<br />
+*) webfig - fixed default configuration popup presence;<br />
+*) webfig - fixed user policy lookup for skin designer;<br />
+*) wifiwave2 - added "client-isolation" feature;<br />
+*) wifiwave2 - added support for handling disconnect request messages from RADIUS servers;<br />
+*) wifiwave2 - fixed calling "scan" and "frequency-scan" commands through the API;<br />
+*) winbox - added "Disconnect Notify" checkbox to "Interface/OVPN Client" menu;<br />
+*) winbox - added "Freq. Usage" and "Scan" buttons for WifiWave2 interfaces;<br />
+*) winbox - added "Ignore Missing" selector to "System/Packages" menu;<br />
+*) winbox - added "Mode" parameter under "Wireless" menu with WifiWave2 package;<br />
+*) winbox - added "Routing Table" parameter for IPv6 routes;<br />
+*) winbox - added "TLS Version" parameter for "Interface/OVPN";<br />
+*) winbox - added "VPN" tab to "Routing/BGP" menu;<br />
+*) winbox - added "VRF" parameter for "SSH" and "Telnet" menus;<br />
+*) winbox - added "VRF" parameter to "IP/Services" menu;<br />
+*) winbox - added "comment" parameter to "User Manager/Users" menu;<br />
+*) winbox - added "host-uniq" parameter to PPPoE client interface;<br />
+*) winbox - added MLAG support;<br />
+*) winbox - added SHA256 and SHA512 "Auth" values for OVPN menu's;<br />
+*) winbox - added ZeroTier support;<br />
+*) winbox - added explicit "Upload" and "Download" names for "Bucket Size" parameters under "Queues" menu;<br />
+*) winbox - added interface list support for "IP/Traffic Flow" menu;<br />
+*) winbox - added local/remote CPU load parameters for "Bandwidth Test";<br />
+*) winbox - added missing "3GGP RAW" parameter under "Interface/Wireless/Interworking Profile" menu;<br />
+*) winbox - added missing "accounting", "interim-update" and "radius-password" parameters under "IP/DHCP Server" menu;<br />
+*) winbox - added support for "Tool/Speedtest" menu;<br />
+*) winbox - added support for W60G align tool;<br />
+*) winbox - allow adding more than 100 tagged/untagged interfaces under "Bridge/VLAN" menu;<br />
+*) winbox - allow configuring "VTEP" under "Interface/VXLAN" menu;<br />
+*) winbox - allow setting "Interface" parameter for 100G LED types;<br />
+*) winbox - changed "Accept Redirects" parameter type under "IPv6/Settings" menu;<br />
+*) winbox - do not require "name" and "file name" parameters for certificate import/export;<br />
+*) winbox - do not show "Antenna Scan" button on devices that do not support it;<br />
+*) winbox - do not show connection tracking table if it has more than 10000 entries;<br />
+*) winbox - fixed "00:00:00" time printing;<br />
+*) winbox - fixed "Switch" menu on Chateau devices;<br />
+*) winbox - fixed "action" field in "IP/Web Proxy/Access" menu;<br />
+*) winbox - fixed "expires-after" certificate parameter value;<br />
+*) winbox - fixed CHR License renewing process;<br />
+*) winbox - fixed address list type parameters in "Routing" menu;<br />
+*) winbox - fixed content filtering in "Tools/Packet Sniffer/Packets" menu;<br />
+*) winbox - fixed entry order in "Tools/Packet Sniffer/Packets" menu;<br />
+*) winbox - fixed error message when adding NTH rule with "0" value;<br />
+*) winbox - fixed minor typo under "LTE" interface menu;<br />
+*) winbox - fixed switch related settings for MT7621 switch chip (hEX, hEX S, RBM33G, RBM11G, LtAP);<br />
+*) winbox - made "9" the default value for "Target" parameter under "IP/Traffic Flow" menu;<br />
+*) winbox - made "Routing Filters/Rules" table sortable;<br />
+*) winbox - made OSPF interface type names consistent between CLI and GUI;<br />
+*) winbox - moved "IP/Route/Nexthops" and "IPv6/Route/Nexthops" menus to "Routing/Nexthops";<br />
+*) winbox - moved IPv4 and IPv6 "Rules" menus under "Routing" menu;<br />
+*) winbox - properly limit "Disconnect Timeout" value under "CAPsMAN/Configuration" menu;<br />
+*) winbox - properly save "IPv6/Settings" menu in session file;<br />
+*) winbox - properly show "v" flag instead of "y" under "IP/Route" menu;<br />
+*) winbox - properly update ethernet auto negotiation status on CHR;<br />
+*) winbox - properly update server list under "System/NTP Client/Servers" menu;<br />
+*) winbox - renamed "Keep user configuration" to "Keep users" under "System/Reset Configuration" menu;<br />
+*) winbox - renamed "MBPS" to "Mbps" value unit name in "Tools/Traffic Generator" menu;<br />
+*) winbox - renamed "Revoked" parameter to "Revoked Time" under "System/Certificates" menu;<br />
+*) winbox - report local terminal session as "local" instead of "telnet";<br />
+*) winbox - require existing pool for "Address Pool" parameter under "IPv6/DHCP Server" menu;<br />
+*) winbox - require non empty "Packet Mark" value under "Queues" menu;<br />
+*) winbox - show "H" flag for offloaded connections in "IP/Firewall/Connections" menu;<br />
+*) winbox - show "Lost Ratio" column by default under "Tools/Traffic Generator" menu;<br />
+*) winbox - show "Routes" column by default under "PPP/Secrets" menu;<br />
+*) winbox - show "System/Health/Settings" only on boards that have configurable values;<br />
+*) winbox - show "System/SwOS" menu only on boards that have dual boot;<br />
+*) winbox - show additional columns by default for "Wireless" menu with WifiWave2 package;<br />
+*) winbox - sort "Address List" parameter values alphabetically in "IP/DHCP Server/Leases" menu;<br />
+*) winbox - updated default "Routing/BGP/Peer Cache" table appearance;<br />
+*) winbox - use "total" as default value for "Tools/Profile";<br />
+*) wireguard - allow same peer's public key for different interfaces;<br />
+*) wireguard - fixed IPv6 LL address generation;<br />
+*) wireguard - fixed IPv6 traffic processing with multiple peers;<br />
+*) wireguard - made "preshared-key" and "private-key" values sensitive;<br />
+*) wireless - added "3gpp-info" parameter to interworking configuration;<br />
+*) wireless - added EAP-AKA to interworking's realm configuration;<br />
+*) wireless - added information about client signal strength to log messages about disconnections;<br />
+*) wireless - correctly preserve WMM priority when receiving packets;<br />
+*) wireless - fixed frequency range information for IPQ4019 interfaces;<br />
+*) wireless - fixed interface initialization on Metal 2SHPn;<br />
+*) wireless - improved nv2 link stability;<br />
+*) wireless - improved wireless connection stability during background scans;<br />
+*) www - fixed "tls-version" for SSL;<br />
+*) x86 - added support for Intel E810 NIC;<br />
+*) x86 - allow to select disk for install image;<br />
+*) x86 - fixed NVME partition path;<br />
+*) x86 - fixed VLAN tagged packet transmit;<br />
+*) x86 - made "no" the default value for "disable-running-check" ethernet parameter;<br />
+*) x86 - properly distinguish multiple NICs that share the same PCI bus number;<br />
+*) zerotier - fixed IPv6 support;<br />
+*) zerotier - made MAC and MTU values read-only;<br />
+*) zerotier - properly handle IP address change;<br><br>Download the new '<b>RouterOS 7.2</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Tue, 05 Apr 2022 09:30:12 +0300</pubDate><guid isPermaLink="false">919918e655fa3db0ec7dff1b66976b87</guid></item><item><title>RouterOS 7.2rc7 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.2rc7 changelog:</h3>*) route - allow OSPF and RIP redistributed routes to be matched by routing filters;<br><br>Download the new '<b>RouterOS 7.2rc7</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Thu, 31 Mar 2022 09:51:24 +0300</pubDate><guid isPermaLink="false">e154d684fecc341c4358f7d798b2da35</guid></item><item><title>RouterOS 7.2rc6 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.2rc6 changelog:</h3>*) ccr2004 - improved PCI timeout handling on CCR2004-1G-2XS-PCIe;<br />
+*) dude - fixed The Dude compatibility with ARM64;<br />
+*) l2tp - improved service stability when disabling L2TP server with connected clients;<br />
+*) l3hw - fixed default route offloading for CRS305, CRS326-24G-2S+, CRS328, netPower, netFiber devices;<br />
+*) lte - enabled multi-APN and name re-use support for Chateau;<br />
+*) lte - improved stability when modem disappears during firmware upgrade;<br />
+*) ntp - improved source address usage for reply packets;<br />
+*) ospf - properly set VRF for gateway;<br />
+*) poe - fixed PoE driver loading on CRS354-48P-4S+2Q+;<br />
+*) route - allow OSPF and RIP redistributed routes to be matched by routing filters;<br />
+*) route - fixed "table" menu emptying after RouterOS upgrade;<br />
+*) switch - properly limit maximum number of switch rules to 256 on RB5009;<br />
+*) tr069-client - fixed RPC download of "3 Vendor Configuration File" with branding package;<br />
+*) x86 - fixed VLAN tagged packet transmit;<br><br>Download the new '<b>RouterOS 7.2rc6</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Wed, 30 Mar 2022 11:28:53 +0300</pubDate><guid isPermaLink="false">01b7168653233ccbdef8262e152c7e7e</guid></item><item><title>RouterOS 7.2rc5 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.2rc5 changelog:</h3>*) api - accept "Content-Type" with specified charset;<br />
+*) arm - fixed "auto" CPU frequency setting;<br />
+*) arm64 - improved Watchdog initiated reboot reason reporting;<br />
+*) backup - fixed cloud backup's creation timezone;<br />
+*) bgp - added BGP advertisements display (requires output.keep-sent-attributes to be set);<br />
+*) bgp - fixed link-local iBGP address selection;<br />
+*) bgp - fixed network advertisement from address-lists after reboot;<br />
+*) bridge - fixed firewall "ingress-priority" matcher and "new-priority=from-ingress" action settings from VLAN tagged frames;<br />
+*) ccr2004 - improved system stability on CCR2004-12S+2XS;<br />
+*) crs1xx/2xx - fixed static switch host addresses after link down;<br />
+*) crs1xx/2xx - ignore static bridge host addresses (switch unicast-fdb should be used instead);<br />
+*) dhcpv6 - added VRF support;<br />
+*) dude - fixed The Dude client compatibility with RouterOS v7;<br />
+*) firewall - improved available port lookup for source NAT when free port range is exhausted;<br />
+*) ipsec - fixed "identities" menu emptying after RouterOS upgrade/reboot;<br />
+*) ipv6 - do not add duplicate dynamic prefix when static already exists;<br />
+*) ipv6 - fixed "retransmissit-interval" unit value;<br />
+*) ipv6 - fixed VLAN tagged PPPoE packet receiving on RB5009;<br />
+*) l2tp - fixed CHAP challenge packet processing over IPsec;<br />
+*) l3hw - improved routing table offloading for CRS305, CRS326-24G-2S+, CRS328, netPower, netFiber devices;<br />
+*) led - fixed LED behavior on Audience;<br />
+*) led - reduced LTE signal LED range to -70;<br />
+*) log - added warning message when connection tracking table is full;<br />
+*) lte - add IPv6 address on interface as well;<br />
+*) lte - added support for Uplink CA reporting;<br />
+*) lte - changed "CS/PS" registration type from "both" to "any" on R11e-LTE un R11e-LTE6;<br />
+*) lte - do not loose "band" configuration after reboot on Chateau 5G;<br />
+*) lte - fixed AT command response handling on R11e-LTE;<br />
+*) lte - fixed MBIM modem reset on AT timeout;<br />
+*) lte - fixed link flapping when loosing cellular signal on R11e-LTE un R11e-LTE6;<br />
+*) ntp - improved service stability when none of the NTP servers are reachable for a while;<br />
+*) ospf - general stability improvements;<br />
+*) ospf - improved DB retransmit logging;<br />
+*) ospf - send notifies for neighbors;<br />
+*) ovpn - improved memory allocation on Tile in "ethernet" mode;<br />
+*) ovpn - improved system stability in high load scenarios;<br />
+*) pimsm - fixed menu prints;<br />
+*) pimsm - general stability improvements;<br />
+*) queue - fixed queued IPv6 traffic considered as "invalid" by Firewall;<br />
+*) rb4011 - fixed jumbo frame processing on SFP+ port when using 1G module;<br />
+*) rip - added logging;<br />
+*) rip - fixed route metrics;<br />
+*) rip - fixed route redistribution;<br />
+*) rip - use nexthop with interface;<br />
+*) route - fixed "table" menu emptying after RouterOS upgrade;<br />
+*) route - fixed BGP atomic aggregate value; <br />
+*) route - fixed ECMP route removal;<br />
+*) route - general stability improvements;<br />
+*) routerboard - fixed "ether2" interface presence on some RBwAPGR devices;<br />
+*) routerboard - fixed WPS button functionality on Audience;<br />
+*) routing - added PCAP viewer tool for BGP advertisements debugging purposes;<br />
+*) routing-filter - fixed "bgp-*-communities-empty" matcher;<br />
+*) sfp - improved SFP module detection on CRS106 and CRS112;<br />
+*) smips - improved RAM allocation;<br />
+*) switch - added "rx-overflow" counter for 88E6393X (RB5009) and 88E6191X (CCR2004-16G-2S+) switch chips;<br />
+*) switch - improved packet forwarding with enabled "cpu-flow-control" setting between different rate interfaces for 88E6393X (RB5009) and 88E6191X (CCR2004-16G-2S+) switch chips;<br />
+*) tr069-client - added support for 5G band configuration;<br />
+*) tr069-client - added support for wireless "skip-DFS" configuration; <br />
+*) winbox - added missing "3GGP RAW" parameter under "Interface/Wireless/Interworking Profile" menu;<br />
+*) winbox - added missing "accounting", "interim-update" and "radius-password" parameters under "IP/DHCP Server" menu;<br />
+*) winbox - allow adding more than 100 tagged/untagged interfaces under "Bridge/VLAN" menu;<br />
+*) winbox - allow configuring "VTEP" under "Interface/VXLAN" menu;<br />
+*) winbox - fixed "00:00:00" time printing;<br />
+*) winbox - fixed switch related settings for MT7621 switch chip (hEX, hEX S, RBM33G, RBM11G, LtAP);<br />
+*) winbox - moved IPv4 and IPv6 "Rules" menus under "Routing" menu;<br />
+*) winbox - properly show "v" flag instead of "y" under "IP/Route" menu;<br />
+*) winbox - properly update server list under "System/NTP Client/Servers" menu;<br />
+*) winbox - show "System/Health/Settings" only on boards that have configurable values;<br />
+*) www - fixed "tls-version" for SSL;<br />
+*) x86 - allow to select disk for install image;<br />
+*) x86 - fixed NVME partition path;<br />
+*) zerotier - fixed IPv6 support;<br><br>Download the new '<b>RouterOS 7.2rc5</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Wed, 23 Mar 2022 15:44:46 +0200</pubDate><guid isPermaLink="false">2103c045420516a01783f72dcc1cc00f</guid></item><item><title>RouterOS 7.1.5 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.1.5 changelog:</h3>*) route - fixed "table" menu emptying after RouterOS upgrade;<br><br>Download the new '<b>RouterOS 7.1.5</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Tue, 22 Mar 2022 15:53:40 +0200</pubDate><guid isPermaLink="false">6d79b7ae2fbed490041c69703f946b53</guid></item><item><title>RouterOS 7.1.4 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.1.4 changelog:</h3>*) bgp - fixed VPNv4 route sending to remote peer;<br />
+*) bridge - fixed destination NAT when using "use-ip-firewall" setting;<br />
+*) bridge - fixed filter rules when using interface lists;<br />
+*) bridge - fixed priority tagged frame forwarding when using "frame-types=admit-only-untagged-and-priority-tagged" setting;<br />
+*) capsman - improved stability when running background scan on CAP;<br />
+*) crs3xx - improved maximum allowed ACL rule calculation;<br />
+*) crs3xx - improved system stability when creating many ACL rules on CRS317, CRS309, CRS312, CRS326-24S+2Q+ and CRS354 devices;<br />
+*) l2tp - improved system stability when processing L2TP control messages;<br />
+*) lte - made "no" the default value for "use-network-apn" parameter;<br />
+*) lte - made "RG502QEAAAR11A06M4G" the last OTA firmware version update for Chateau 5G in RouterOS 7.1.x release tree;<br />
+*) ntp - improved source address usage for reply packets;<br />
+*) ospf - fixed default route origination when "default-originate=if-installed" "redistribute" is enabled;<br />
+*) ospf - fixed incorrect LSA types when changing area types;<br />
+*) ppp - added "comment" option for PPPoE servers;<br />
+*) queue - improved system stability when using more than 255 unique packet marks;<br />
+*) route - fixed ECMP load balancing in FastPath;<br />
+*) route - fixed route addition to VRF from BGP;<br />
+*) route - fixed routing configuration export on SMIPS devices;<br />
+*) route-filters - renamed "*-set" to "*-list";<br />
+*) sfp - improved SFP module detection on CRS106 and CRS112;<br />
+*) switch - fixed port-isolation misconfiguration detection when using multiple switches;<br />
+*) traffic-flow - do not handle NAT events when "nat-events" is disabled;<br />
+*) ups - fixed UPS support;<br />
+*) winbox - added "VPN" tab to "Routing/BGP" menu;<br />
+*) winbox - added "VRF" parameter for "SSH" and "Telnet" menus;<br />
+*) winbox - do not show "Antenna Scan" button on devices that do not support it;<br />
+*) wireguard - allow same peer's public key for different interfaces;<br />
+*) wireless - added "3gpp-info" parameter to interworking configuration;<br />
+*) wireless - added EAP-AKA to interworking's realm configuration;<br />
+*) wireless - fixed interface initialization on Metal 2SHPn;<br><br>Download the new '<b>RouterOS 7.1.4</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Tue, 22 Mar 2022 10:07:52 +0200</pubDate><guid isPermaLink="false">2a6ce595256d0727fd08a19ec1a2eb2f</guid></item><item><title>RouterOS 6.49.5 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>6.49.5 changelog:</h3>*) defconf - fixed invalid default password setting after configuration reset (introduced in v6.49.4);<br />
+*) sfp - improved SFP module detection on CRS106 and CRS112;<br><br>Download the new '<b>RouterOS 6.49.5</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Wed, 16 Mar 2022 09:33:03 +0200</pubDate><guid isPermaLink="false">5fce278e5db299dba40fc0edd51a6695</guid></item><item><title>RouterOS 6.49.4 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>6.49.4 changelog:</h3>*) capsman - improved stability when running background scan on CAP; <br />
+*) lora - fixed "antenna-gain" parameter unit;<br />
+*) ssl - disabled RC4 and 3DES ciphers for "www-ssl", "www-api" and OVPN services;<br />
+*) traffic-flow - do not handle NAT events when "nat-events" is disabled;<br />
+*) wireless - added "3gpp-info" parameter to interworking configuration;<br />
+*) wireless - added EAP-AKA to interworking's realm configuration;<br />
+*) wireless - correctly preserve WMM priority when receiving packets;<br />
+*) wireless - updated "philippines" regulatory domain information;<br><br>Download the new '<b>RouterOS 6.49.4</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Wed, 02 Mar 2022 09:48:22 +0200</pubDate><guid isPermaLink="false">df80c9b2d3e138b904b57e6a8d93fecb</guid></item><item><title>RouterOS 7.2rc4 [Testing]</title><link>https://mikrotik.com/download/changelogs/testing</link><description><![CDATA[ <p><h3>7.2rc4 changelog:</h3>*) bgp - fixed VPNv4 route sending to remote peer;<br />
+*) bridge - fixed FastPath when using "frame-types=admit-only-untagged-and-priority-tagged" setting;<br />
+*) bridge - fixed IP address on untagged bridge interface when vlan-filtering is enabled (introduced in v7.2rc2);<br />
+*) bridge - fixed PPPoE packet forwarding when using "use-ip-firewall-for-pppoe" setting;<br />
+*) bridge - fixed destination NAT when using "use-ip-firewall" setting;<br />
+*) bridge - fixed filter and NAT "set-priority" on ARM64 devices;<br />
+*) bridge - fixed filter rules when using interface lists;<br />
+*) bridge - fixed priority tagged frame forwarding when using "frame-types=admit-only-untagged-and-priority-tagged" setting;<br />
+*) console - fixed terminal repainting on F5 and CTRL+L key press (introduced in v7.2rc2);<br />
+*) crs3xx - fixed watchdog timer functionality;<br />
+*) crs3xx - improved maximum allowed ACL rule calculation;<br />
+*) crs3xx - improved system stability when creating many ACL rules on CRS317, CRS309, CRS312, CRS326-24S+2Q+ and CRS354 devices;<br />
+*) l2tp - improved system stability when processing L2TP control messages;<br />
+*) lte - added MAC address and IPv6 LL address persistence after reboot on EG12 and EG18 modems;<br />
+*) lte - made "no" the default value for "use-network-apn" parameter;<br />
+*) ntp - allow adding duplicate server address if dynamic entry exists;<br />
+*) ntp - fixed multicast mode support;<br />
+*) ntp - improved IPv6 address support;<br />
+*) ospf - fixed default route origination when "default-originate=if-installed" "redistribute" is enabled;<br />
+*) ospf - fixed external LSA not updating after prefix netmask change;<br />
+*) ppp - added "comment" option for PPPoE servers;<br />
+*) ppp - improved stability when handling large amount of connections simultaneously;<br />
+*) queue - improved system stability when using more than 255 unique packet marks;<br />
+*) route - fixed ECMP load balancing in FastPath;<br />
+*) route - fixed route addition to VRF from BGP;<br />
+*) route-filters - renamed "*-set" to "*-list";<br />
+*) sms - increased "at-chat" timeout when sending SMS;<br />
+*) switch - fixed port-isolation misconfiguration detection when using multiple switches;<br />
+*) switch - improved switch chip initialization process on bootup for CCR2004-16g-2s+ devices;<br />
+*) ups - fixed UPS support;<br />
+*) vxlan - fixed "group" and "interface" setting reset after upgrade (introduced in v7.2rc2);<br />
+*) vxlan - fixed running state after reboot when using "interface" and "group" settings;<br />
+*) wifiwave2 - added "client-isolation" feature;<br />
+*) winbox - added "host-uniq" parameter to PPPoE client interface;<br />
+*) winbox - do not show "Antenna Scan" button on devices that do not support it;<br />
+*) wireguard - allow same peer's public key for different interfaces;<br />
+*) wireguard - fixed IPv6 traffic processing with multiple peers;<br />
+*) wireless - added "3gpp-info" parameter to interworking configuration;<br />
+*) wireless - added EAP-AKA to interworking's realm configuration;<br />
+*) wireless - correctly preserve WMM priority when receiving packets;<br />
+*) wireless - improved nv2 link stability;<br><br>Download the new '<b>RouterOS 7.2rc4</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Testing</category><pubDate>Wed, 23 Feb 2022 12:56:23 +0200</pubDate><guid isPermaLink="false">af478c6876c5b0fc9aac99cd3a9bc940</guid></item><item><title>RouterOS 7.1.3 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>7.1.3 changelog:</h3>*) bridge - fixed PPPoE packet forwarding when using "use-ip-firewall-for-pppoe" setting;<br />
+*) bridge - fixed bridge filter and NAT rules on ARM64 and TILE devices;<br />
+*) bridge - fixed filter and NAT "set-priority" action;<br />
+*) conntrack - properly detect helper status;<br />
+*) crs3xx - fixed watchdog timer functionality;<br />
+*) ppp - improved stability when handling large amount of connections simultaneously;<br />
+*) sms - increased "at-chat" timeout when sending SMS;<br />
+*) switch - improved switch chip initialization process on bootup for CCR2004-16g-2s+ devices;<br />
+*) vxlan - allow unsetting "group" and "interface" properties;<br />
+*) vxlan - fixed running state after reboot when using "interface" and "group" settings;<br />
+*) wireless - correctly preserve WMM priority when receiving packets;<br />
+*) wireguard - fixed IPv6 traffic processing with multiple peers;<br><br>Download the new '<b>RouterOS 7.1.3</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Mon, 21 Feb 2022 15:30:46 +0200</pubDate><guid isPermaLink="false">597ecb49bd8a9bc2fe28b69afdf34b91</guid></item><item><title>RouterOS 6.49.3 [Stable]</title><link>https://mikrotik.com/download/changelogs/stable</link><description><![CDATA[ <p><h3>6.49.3 changelog:</h3>*) bridge - improved system stability when initialising bridge interface<br />
+*) console - updated copyright notice; <br />
+*) defconf - fixed secondary-frequency configuration;<br />
+*) ethernet - improved system stability when receiving large packets on devices with 88F3720 CPU (nRAY, LHGG);<br />
+*) led - fixed default LED configuration for CubeG-5ac60ad; <br />
+*) netinstall - fixed x86 installation process;<br />
+*) socks - fixed SOCKS5 support;<br />
+*) upgrade - improved 404 error handling when checking for new versions;<br />
+*) winbox - show "System/Health" only on boards that have health monitoring; <br />
+*) wireless - added U-NII-2 support for US and Canada country profiles for OmniTik 5, Metal 52 ac, and GrooveA 52 devices;<br />
+*) x86 - fixed downgrade from RouterOS v7.1.2 and above;<br><br>Download the new '<b>RouterOS 6.49.3</b>' version here: <a href='https://mikrotik.com/download'>https://mikrotik.com/download</a></p> ]]></description><category>Stable</category><pubDate>Tue, 15 Feb 2022 11:13:54 +0200</pubDate><guid isPermaLink="false">c18849a558be486cf3013fc01952eab7</guid></item></channel></rss>

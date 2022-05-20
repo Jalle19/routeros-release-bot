@@ -1,0 +1,12 @@
+{
+  "name": "routeros-release-bot",
+  "version": "1.0.0",
+  "description": "Release bot for MikroTik RouterOS releases",
+  "author": "Sam Stenvall <neggelandia@gmail.com>",
+  "license": "GPL-2.0+",
+  "dependencies": {
+    "discord.js": "12.5.3",
+    "rss-parser": "3.12.0",
+    "yargs": "17.5.1"
+  }
+}
