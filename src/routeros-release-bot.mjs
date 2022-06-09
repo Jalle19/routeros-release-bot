@@ -57,7 +57,7 @@ discordClient.once('ready', async () => {
         const message = createDiscordMessage(title, changeLog, argv.channel)
 
         console.log(message)
-        //await channel.send(message)
+        await channel.send(message)
     }
 
     // The Discord client starts an infinite loop that apparently can't be exited just like that
