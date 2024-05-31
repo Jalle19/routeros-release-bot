@@ -24,8 +24,3 @@ export const filterItems = (items, channel, releasedSince) => {
         return isStableRelease && isReleaseRelevant
     })
 }
-
-export const formatDescription = (description) => {
-    // Fix double line-breaks (one raw break, one converted from <br />)
-    return description.replace(/\n\r\n/g, '\r\n')
-}

@@ -1,6 +1,6 @@
 import yargs from 'yargs'
 import Discord from 'discord.js'
-import { filterItems, formatDescription, parseRssFeed } from './feed.mjs'
+import { filterItems, parseRssFeed } from './feed.mjs'
 import { createDiscordMessage } from './discord.mjs'
 import { RELEASE_FEED_URL } from './constants.mjs'
 
@@ -51,7 +51,7 @@ discordClient.once('ready', async () => {
         const title = item.title
 
         // The raw change log is pretty badly formatted so we need to touch it up
-        const changeLog = formatDescription(item.contentSnippet)
+        const changeLog = item['content:encodedSnippet']
 
         // Format the message for sending to the channel
         const message = createDiscordMessage(title, changeLog, argv.channel)
