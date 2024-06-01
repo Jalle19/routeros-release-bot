@@ -7,7 +7,8 @@ export const createDiscordMessage = (title, changelog, releaseChannel) => {
 
     // Truncate the message to to avoid "content: Must be 4000 or fewer in length."
     if (message.length > DISCORD_MESSAGE_MAX_LENGTH) {
-        const notice = "```\nThis message has been truncated to fit in a Discord message, some change log entries may be missing"
+        const notice = "```\nThis message has been truncated to fit in a Discord message, some change log entries " +
+            "may be missing. See the full change log at https://mikrotik.com/download/changelogs"
 
         message = message.substring(0, DISCORD_MESSAGE_MAX_LENGTH - notice.length) + notice
     }
